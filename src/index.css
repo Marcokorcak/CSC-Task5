@@ -1,0 +1,219 @@
+body {
+  font-family: monospace;
+  background: #000;
+  font-size: 1.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+@media screen and (max-width: 1200px) {
+  .flex {
+    flex-direction: column;
+  }
+}
+
+.gap {
+  gap: 1rem;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.input-box,
+.button-box,
+.box {
+  background: #fff;
+  border-radius: 1rem;
+  border: 2px solid #333;
+  padding: 2.5rem;
+  margin: 4rem auto;
+  max-width: 30rem;
+  box-shadow: 0.75rem 0.75rem 0 0 red;
+  top: 0;
+  transition: all 0.25s ease-out;
+}
+.hover {
+  box-shadow: 1rem 1rem 0 0 red;
+  top: -4px;
+}
+.input-box,
+.button-box {
+  margin: 0;
+  padding: 1rem;
+  box-shadow: 3px 3px 0 0 red;
+}
+.input-box {
+  border-radius: 0;
+  padding: 0.25rem 1rem;
+  font-size: 2rem;
+  width: auto;
+}
+.button-box {
+  cursor: pointer;
+  font-family: monospace;
+}
+.button-box:active {
+  position: relative;
+  top: 3px;
+  box-shadow: none;
+}
+
+.button-box:hover {
+  opacity: 0.8;
+}
+
+.button-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.huge {
+  font-family: monospace;
+  font-size: 4rem;
+  text-shadow: 0.75rem 0.75rem 0 0 red;
+}
+
+/*This is coded CSS rainbow*/
+
+.rainbow:hover {
+  -webkit-animation: rainbow 15s infinite;
+  -ms-animation: rainbow 15s infinite;
+  -o-animation: rainbow 15s infinite;
+  animation: rainbow 15s infinite;
+}
+@-webkit-keyframes rainbow {
+  10% {
+    background-color: #ff8000;
+  }
+  20% {
+    background-color: #ffff00;
+  }
+  30% {
+    background-color: #80ff00;
+  }
+  40% {
+    background-color: #00ff00;
+  }
+  50% {
+    background-color: #00ff80;
+  }
+  60% {
+    background-color: #00ffff;
+  }
+  70% {
+    background-color: #0080ff;
+  }
+  80% {
+    background-color: #0000ff;
+  }
+  90% {
+    background-color: #8000ff;
+  }
+  100% {
+    background-color: #ff0080;
+  }
+}
+@-ms-keyframes rainbow {
+  10% {
+    background-color: #ff8000;
+  }
+  20% {
+    background-color: #ffff00;
+  }
+  30% {
+    background-color: #80ff00;
+  }
+  40% {
+    background-color: #00ff00;
+  }
+  50% {
+    background-color: #00ff80;
+  }
+  60% {
+    background-color: #00ffff;
+  }
+  70% {
+    background-color: #0080ff;
+  }
+  80% {
+    background-color: #0000ff;
+  }
+  90% {
+    background-color: #8000ff;
+  }
+  100% {
+    background-color: #ff0080;
+  }
+}
+@-o-keyframes rainbow {
+  10% {
+    background-color: #ff8000;
+  }
+  20% {
+    background-color: #ffff00;
+  }
+  30% {
+    background-color: #80ff00;
+  }
+  40% {
+    background-color: #00ff00;
+  }
+  50% {
+    background-color: #00ff80;
+  }
+  60% {
+    background-color: #00ffff;
+  }
+  70% {
+    background-color: #0080ff;
+  }
+  80% {
+    background-color: #0000ff;
+  }
+  90% {
+    background-color: #8000ff;
+  }
+  100% {
+    background-color: #ff0080;
+  }
+}
+@keyframes rainbow {
+  10% {
+    background-color: #ff8000;
+  }
+  20% {
+    background-color: #ffff00;
+  }
+  30% {
+    background-color: #80ff00;
+  }
+  40% {
+    background-color: #00ff00;
+  }
+  50% {
+    background-color: #00ff80;
+  }
+  60% {
+    background-color: #00ffff;
+  }
+  70% {
+    background-color: #0080ff;
+  }
+  80% {
+    background-color: #0000ff;
+  }
+  90% {
+    background-color: #8000ff;
+  }
+  100% {
+    background-color: #ff0080;
+  }
+}
