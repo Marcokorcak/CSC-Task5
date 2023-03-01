@@ -22,17 +22,17 @@ When the page is loaded the movies are not sorted and when the button is clicked
 
 ## Screenshots
 
-<img src="https://user-images.githubusercontent.com/77298953/220262355-db351454-b4cd-422e-9f8a-7b75dd7899e1.png" width=60% height=60%>
+<img src="https://user-images.githubusercontent.com/77298953/222260710-2c0499fa-3a70-4cad-bc80-4023787c63f8.png" width=60% height=60%>
 
-The image above shows how the screen looks when it is originally loaded
+The image above shows the starting page when the website ir originally loaded, demonstarting the initial state 
 
-<img src="https://user-images.githubusercontent.com/77298953/220262455-9b975d6a-5ed6-4fe9-b56c-b1fac773bca3.png" width=60% height=60%>
+<img src="https://user-images.githubusercontent.com/77298953/222260861-c878bc73-6752-4044-b71b-5fe6f4506300.png" width=60% height=60%>
 
-The image above shows the result when clicking the Ascending order button
+The image above shows the result when clicking to increment the value by 5 and the values change on the buttons
 
-<img src="https://user-images.githubusercontent.com/77298953/220262571-aeacdee3-17e4-40de-90ba-a141ae0f2782.png" width=60% height=60%>
+<img src="https://user-images.githubusercontent.com/77298953/222260984-dec342ff-c012-46ae-8b53-ad0b43a85a3f.png" width=60% height=60%>
 
-The image above shows the result when clicking the Descending order button
+The image above shows the result when setting the value to change by as -3
 
 
 
