@@ -2,48 +2,51 @@ import { useReducer } from 'react';
 
 const Counter = () => {
 
-    const initialState = {
+    const initialState = { //initial values for the inital state 
         count: 0,
         numberToChangeBy: 1,
     };
 
     const reducer = (state, action) => {
 
-        if(action.type === 'NumberToChangeBy')
+        if(action.type === 'NumberToChangeBy') //function for keeping track of number to change by 
         {
-            const clonedState = {...state};
-            let newNum = action.nextNum;
-            clonedState.numberToChangeBy = newNum;
-            return clonedState;
+            const clonedState = {...state}; //cloning the state 
+            let newNum = action.nextNum; //setting the new variable equal  to the nextNum
+            clonedState.numberToChangeBy = newNum; //changing the numberToChangeBy in the cloned state
+            return clonedState; //returning the cloned state 
             
         }
 
-        if(action.type === 'IncrementNumber')
+        if(action.type === 'IncrementNumber') //function for incrementing the count
         {
-            const clonedState = {...state};
-            //let newCount = state.count + state.numberToChangeBy;
-           let newCount = parseInt(state.count,10)+parseInt(state.numberToChangeBy,10)
-            clonedState.count = newCount;
-            return clonedState;
+            const clonedState = {...state}; //cloning the state 
+           let newCount = parseInt(state.count,10)+parseInt(state.numberToChangeBy,10) //establishing the new count vairable
+            clonedState.count = newCount; //setting the count of the cloned state to the new vairable 
+            return clonedState; //returning the cloned state 
         }
 
-        if(action.type === 'DecrementNumber')
+        if(action.type === 'DecrementNumber') //function for decrementing the count 
         {
-            const clonedState = {...state};
-           //let newCount = state.count - state.numberToChangeBy;
-           let newCount = parseInt(state.count,10)-parseInt(state.numberToChangeBy,10)
-            clonedState.count = newCount;
-            return clonedState;
+            const clonedState = {...state}; //cloning the state 
+           let newCount = parseInt(state.count,10)-parseInt(state.numberToChangeBy,10) //establishing the new count vairable
+            clonedState.count = newCount; //setting teh cloned state count to the new value 
+            return clonedState; //returning the cloned state 
         }
 
-
+        else {
+            throw Error('Unknown action: ' + action.type);
+        }
 
         return state;
     };
 
     const [state, dispatch] = useReducer(reducer, initialState);
 
-    const NumberToChangeBy = () => {
+    /* 
+    functions that calls dispatch 
+    */
+    const NumberToChangeBy = () => { 
         dispatch({type: 'NumberToChangeBy'})
     };
 
