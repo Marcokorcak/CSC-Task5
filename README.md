@@ -2,7 +2,6 @@
 
 ## Table of contents  
 * [Task Description](#Task-description)
-* [Notes](#Notes)
 * [Screenshots](#Screenshots)
 
 
@@ -16,9 +15,6 @@ The state should include:
 
 The useReducer hook should be used to update the state whenever the buttons are clicked along with the updating of the “Number to Increment/Decrement by” value.
 
-
-## Notes
-When the page is loaded the movies are not sorted and when the button is clicked, the sort (asc/desc) that is shown on the button is the current sort being displayed on the screen
 
 ## Screenshots
 
