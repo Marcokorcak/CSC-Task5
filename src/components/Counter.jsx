@@ -38,7 +38,7 @@ const Counter = () => {
             throw Error('Unknown action: ' + action.type);
         }
 
-        return state;
+            return state;
     };
 
     const [state, dispatch] = useReducer(reducer, initialState);
@@ -58,7 +58,7 @@ const Counter = () => {
         dispatch({type: 'DecrementNumber'})
     };
 
-    function handleInputChange(e) {
+    function handleInputChange(e) { //function that handles the changes in NumberToChangeBy
         dispatch({
           type: 'NumberToChangeBy',
           nextNum: e.target.value
