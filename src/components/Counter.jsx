@@ -35,7 +35,7 @@ const Counter = () => {
         }
 
         else {
-            throw Error('Unknown action: ' + action.type);
+            throw Error('Unknown action: ' + action.type); //error catching
         }
 
             return state;
