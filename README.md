@@ -16,7 +16,6 @@ The state should include:
 
 The useReducer hook should be used to update the state whenever the buttons are clicked along with the updating of the “Number to Increment/Decrement by” value.
 
-This assignment is a straightforward way to demonstrate that you understand the useReducer hook and give you a chance to practice using it to manage state in a React application.
 
 ## Notes
 When the page is loaded the movies are not sorted and when the button is clicked, the sort (asc/desc) that is shown on the button is the current sort being displayed on the screen
